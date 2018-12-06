@@ -53,7 +53,12 @@
 <?php
 
     if(isset($_GET["delete"])){
-        $id = $_GET["id"] ?? null;
+        // $id = $_GET["id"] ?? null;
+        if($_GET["id"]){
+            $id=$_GET["id"];
+        }else{
+            $id=null;
+        }
         $where = array("id"=>$id);
         if($obj->delete_record("cars",$where)){
             header("location:index.php?msg=Deteted success");
