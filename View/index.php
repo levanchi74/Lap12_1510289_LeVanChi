@@ -14,6 +14,7 @@
 </head>
 <body>
     <h3 class="text-center" style="margin-top:10px;">List Car</h3>
+    <h5 class="text-center text-danger"> Please set ID -> AUTO_INCREAMENT </h5>
     <div class="container">
         <a href="new.php" class="btn btn-primary" style="margin-top:10px; margin-bottom:20px;">New Car</a>
         <table class="table">
